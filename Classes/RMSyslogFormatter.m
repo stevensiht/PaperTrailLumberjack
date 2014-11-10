@@ -28,9 +28,14 @@ static NSString * const RMAppUUIDKey = @"RMAppUUIDKey";
         default                 : logLevel = @"15"; break;
     }
     
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MMM dd HH:mm:ss"];
-    [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+    static NSDateFormatter *dateFormatter;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"MMM dd HH:mm:ss"];
+        [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+    });
+    
     NSString *timestamp = [dateFormatter stringFromDate:logMessage.timestamp];
     
     //Get vendor id
