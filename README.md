@@ -1,7 +1,6 @@
 # PaperTrailLumberjack
 PaperTrailLumberjack is a CocoaLumberjack logger that helps log statements to your log destination at [papertrailapp](http://papertrailapp.com).
-It can log using TCP and UDP. On OS X, TLS is supported on TCP Connections, while, on iOS, TCP connections are currently only plain-text. 
-The default is UDP (which is always unencrypted). 
+It can log using TCP and UDP - the default, being TCP (with TLS).
 
 ## Usage
 
@@ -12,6 +11,7 @@ Example UDP logging:
     RMPaperTrailLogger *paperTrailLogger = [RMPaperTrailLogger sharedInstance];
     paperTrailLogger.host = @"destination.papertrailapp.com"; //Your host here
     paperTrailLogger.port = 9999; //Your port number here    
+    paperTrailLogger.useTcp = NO;
     [DDLog addLogger:paperTrailLogger];
     DDLogVerbose(@"Hi PaperTrailApp.com);
 
@@ -20,7 +20,6 @@ Example TCP logging (with TLS):
     RMPaperTrailLogger *paperTrailLogger = [RMPaperTrailLogger sharedInstance];
     paperTrailLogger.host = @"destination.papertrailapp.com"; //Your host here
     paperTrailLogger.port = 9999; //Your port number here    
-    paperTrailLogger.useTcp = YES; //TLS is on by default on OS X and ignored on iOS    
     [DDLog addLogger:paperTrailLogger];
     DDLogVerbose(@"Hi PaperTrailApp.com");
 
@@ -30,12 +29,26 @@ Sample log output:
 
     May 08 23:20:59 0A3F9C64-D271-452F-AD6E-8052BBD3F789 PaperTrailLumberjackiOSExample: 60b PaperTrailLumberjackiOSExampleTests@testUdpLogging@62 "Hi PaperTrailApp.com"
 
+By default, PaperTrailLumberjack uses a UUID for machine name and the application's bundle display name for it's program name. These can be overriden, as follows
+
+    paperTrailLogger.machineName = @"My Custom Machine";
+    paperTraiLogger.programName = @"My Program";
+
+Whitespace (if any) in user defined machine and program names will be removed before logging. Sample output
+
+    May 08 23:20:59 MyCustomMachine MyProgram: 60b PaperTrailLumberjackiOSExampleTests@testUdpLogging@62 "Hi PaperTrailApp.com"
+
 ## Installation
 
 PaperTrailLumberjack is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
 
     pod 'PaperTrailLumberjack'
+
+
+In your project, import the PaperTrailLumberJack header
+
+    import <PaperTrailLumberjack/RMPaperTrailLumberjack.h>
 
 ## Author
 

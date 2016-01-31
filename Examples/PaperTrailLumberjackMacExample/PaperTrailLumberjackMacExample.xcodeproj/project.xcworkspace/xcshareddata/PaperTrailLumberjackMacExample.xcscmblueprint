@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B9AF3F0C3E9155BC79A734DA4BAC4B35A0883A1C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3960012D211695D11BF357855FF27EF7D528A327" : 0,
+    "B9AF3F0C3E9155BC79A734DA4BAC4B35A0883A1C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5ADFF7A8-5A58-4AB1-B8A1-196C0DC95B28",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3960012D211695D11BF357855FF27EF7D528A327" : "",
+    "B9AF3F0C3E9155BC79A734DA4BAC4B35A0883A1C" : "PaperTrailLumberjack\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PaperTrailLumberjackMacExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Examples\/PaperTrailLumberjackMacExample\/PaperTrailLumberjackMacExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/bitbucket.org\/rmonkey\/private-cocoapods.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3960012D211695D11BF357855FF27EF7D528A327"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:rmonkey\/papertraillumberjack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B9AF3F0C3E9155BC79A734DA4BAC4B35A0883A1C"
+    }
+  ]
+}

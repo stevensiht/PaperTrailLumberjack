@@ -132,10 +132,16 @@ xcuserdata
 # CocoaPods
 Pods/
 
+Examples/PaperTrailLumberjackMacExample/*.xcworkspace
+Examples/PaperTrailLumberjackiOSExample/*.xcworkspace
 
 #####
 # Buld Archives
 Build Archives/
+
+#####
+# YCM
+.ycm_extra_conf.*
 
 ####
 # UNKNOWN: recommended by others, but I can't discover what these files are

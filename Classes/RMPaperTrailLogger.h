@@ -3,7 +3,7 @@
 //  PaperTrailLumberJack
 //
 //  Created by Malayil Philip George on 5/1/14.
-//  Copyright (c) 2014 Rogue Monkey Technologies & Systems Private Limited. All
+//  Copyright (c) 2016 Rogue Monkey Technologies & Systems Private Limited. All
 //  rights reserved.
 //
 
@@ -20,22 +20,27 @@
  to provide a custom formatter, make sure that it formats messages that meets
  the syslog spec.
  */
-@interface RMPaperTrailLogger : DDAbstractLogger {
-    NSString* _host;
-    NSUInteger _port;
-    BOOL _useTcp;
-    BOOL _useTLS;
-}
+@interface RMPaperTrailLogger : DDAbstractLogger
 
 /**
  The host to which logs should be sent. Ex. logs.papertrailapp.com
  */
-@property (nonatomic, copy) NSString* host;
+@property (nonatomic, copy, nonnull) NSString* host;
 
 /**
  The port on host to which we should connect. Ex. 9999
  */
 @property (nonatomic, assign) NSUInteger port;
+
+/**
+ Can be used to override machine name as a constant (instead of using a UUID per device)
+ */
+@property (nonatomic, copy, nullable) NSString* machineName;
+
+/**
+ Can be used to override program name, instead of getting it from the bundle name
+ */
+@property (nonatomic, copy, nullable) NSString* programName;
 
 /**
  Specifies whether we should connect via TCP. Default is `NO` (uses UDP)
@@ -51,13 +56,6 @@
 /**
  Returns a initialized singleton instance of this logger
  */
-+ (RMPaperTrailLogger*)sharedInstance;
-
-/**
- Releases network resources (sockets) that were opened. Should be called when we
- are done with the logger. Any pending writes will be discarded when this method
- is called.
- */
-- (void)disconnect;
++ (RMPaperTrailLogger* _Nullable)sharedInstance;
 
 @end

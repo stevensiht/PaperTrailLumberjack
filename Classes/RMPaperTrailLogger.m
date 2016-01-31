@@ -7,11 +7,9 @@
 //
 
 #import "RMPaperTrailLogger.h"
-#import "RMSyslogFormatter.h"
+#import "RMSyslogFormatter+Private.h"
 
-#import <CocoaAsyncSocket/GCDAsyncUdpSocket.h>
-#import <CocoaAsyncSocket/GCDAsyncSocket.h>
-#import <CocoaAsyncSocket/AsyncSocket.h>
+#import <CocoaAsyncSocket/CocoaAsyncSocket.h>
 
 @interface RMPaperTrailLogger () {
     GCDAsyncSocket *_tcpSocket;
@@ -42,22 +40,45 @@
         _sharedInstance = [[self alloc] init];
         RMSyslogFormatter *logFormatter = [[RMSyslogFormatter alloc] init];
         _sharedInstance.logFormatter = logFormatter;
+        _sharedInstance.useTcp = YES;
         _sharedInstance.useTLS = YES;
     });
     
     return _sharedInstance;
 }
 
+-(void) dealloc {
+    [self disconnect];
+}
+
+#pragma mark - Accessors
+-(void) setMachineName:(NSString *)machineName
+{
+    _machineName = machineName;
+    if ([self.logFormatter isKindOfClass:[RMSyslogFormatter class]]) {
+        RMSyslogFormatter* syslogFormatter = (RMSyslogFormatter*)_logFormatter;
+        syslogFormatter.machineName = machineName;
+    }
+}
+
+-(void) setProgramName:(NSString *)programName
+{
+    _programName = programName;
+    if ([self.logFormatter isKindOfClass:[RMSyslogFormatter class]]) {
+        RMSyslogFormatter* syslogFormatter = (RMSyslogFormatter*)_logFormatter;
+        syslogFormatter.programName = programName;
+    }
+}
+
+#pragma mark - Networking Implementation
 -(void) disconnect
 {
-    @synchronized(self) {
-        if (self.tcpSocket != nil) {
-            [self.tcpSocket disconnect];
-            self.tcpSocket = nil;
-        } else if (self.udpSocket != nil) {
-            [self.udpSocket close];
-            self.udpSocket = nil;
-        }
+    if (self.tcpSocket != nil) {
+        [self.tcpSocket disconnect];
+        self.tcpSocket = nil;
+    } else if (self.udpSocket != nil) {
+        [self.udpSocket close];
+        self.udpSocket = nil;
     }
 }
 
@@ -132,15 +153,17 @@
         return;
     }
     
-#if !TARGET_OS_IPHONE
     if (self.useTLS) {
+#ifdef DEBUG
         NSLog(@"Starting TLS");
+#endif
         [self.tcpSocket startTLS:nil];
     }
-#endif
 }
 
 #pragma mark - GCDAsyncDelegate methods
+
+#ifdef DEBUG
 
 - (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(UInt16)port
 {
@@ -161,5 +184,17 @@
 {
     NSLog(@"Socket did write data");
 }
+
+- (void)udpSocket:(GCDAsyncUdpSocket *)sock didSendDataWithTag:(long)tag
+{
+    NSLog(@"UDP Socket did write data");
+}
+
+- (void)udpSocket:(GCDAsyncUdpSocket *)sock didNotSendDataWithTag:(long)tag dueToError:(NSError *)error
+{
+    NSLog(@"UDP Socket Error: %@", error.localizedDescription);
+}
+
+#endif
 
 @end
