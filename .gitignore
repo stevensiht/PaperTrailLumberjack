@@ -134,6 +134,7 @@ Pods/
 
 Examples/PaperTrailLumberjackMacExample/*.xcworkspace
 Examples/PaperTrailLumberjackiOSExample/*.xcworkspace
+Examples/PaperTrailLumberjackMacSwiftExample/*.xcworkspace
 
 #####
 # Buld Archives

@@ -40,8 +40,12 @@ Whitespace (if any) in user defined machine and program names will be removed be
 
 ## Installation
 
-PaperTrailLumberjack is available through [CocoaPods](http://cocoapods.org), to install
-it simply add the following line to your Podfile:
+PaperTrailLumberjack is available through [CocoaPods](http://cocoapods.org) 
+To install it,
+
++ **Objective-C** Projects
+   
+    Add the following line to your Podfile:
 
     pod 'PaperTrailLumberjack'
 
@@ -49,6 +53,18 @@ it simply add the following line to your Podfile:
 In your project, import the PaperTrailLumberJack header
 
     import <PaperTrailLumberjack/RMPaperTrailLumberjack.h>
+
+
++ **Swift** projects, 
+
+    Add the following lines to your Podfile:
+
+    use_frameworks!
+    pod 'PaperTrailLumberjack/Swift'
+
+In your project, import PaperTrailLumberJack
+   
+    import PaperTrailLumberjack
 
 ## Author
 
