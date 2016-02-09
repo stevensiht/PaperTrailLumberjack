@@ -23,12 +23,12 @@ A CocoaLumberjack logger to post log messages to papertrailapp.com. Currently, o
 
   s.subspec 'Core' do |ss|
     ss.source_files = 'Classes/*.{h,m}'
+    ss.dependency 'CocoaLumberjack', '~> 2.2'
+    ss.dependency 'CocoaAsyncSocket', '~> 7.4'
   end
 
   s.subspec 'Default' do |ss|
     ss.dependency 'PaperTrailLumberjack/Core'
-    ss.dependency 'CocoaLumberjack', '~> 2.2'
-    ss.dependency 'CocoaAsyncSocket', '~> 7.4'
   end
 
   s.subspec 'Swift' do |ss|
