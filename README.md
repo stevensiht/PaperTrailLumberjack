@@ -50,9 +50,9 @@ To install it,
     pod 'PaperTrailLumberjack'
 
 
-In your project, import the PaperTrailLumberJack header
+    In your project, import the PaperTrailLumberJack header
 
-    import <PaperTrailLumberjack/RMPaperTrailLumberjack.h>
+        import <PaperTrailLumberjack/RMPaperTrailLumberjack.h>
 
 
 + **Swift** projects, 
@@ -62,9 +62,9 @@ In your project, import the PaperTrailLumberJack header
     use_frameworks!
     pod 'PaperTrailLumberjack/Swift'
 
-In your project, import PaperTrailLumberJack
+    In your project, import PaperTrailLumberJack
    
-    import PaperTrailLumberjack
+        import PaperTrailLumberjack
 
 ## Author
 
