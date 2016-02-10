@@ -69,12 +69,13 @@ PaperTrailLumberjack can be installed by multiple methods
    
         import PaperTrailLumberjack
 
+
 2. Via [Carthage](https://github.com/Carthage/Carthage)
 
-Carthage is a light-weight dependency manager, that is a lot less intrusive, as compared to Cocoapods. To install with Carthage,
+    Carthage is a light-weight dependency manager, that is a lot less intrusive, as compared to Cocoapods. To install with Carthage,
 add the following entry into your Cartfile and follow the instructions listed [here](https://github.com/Carthage/Carthage)
 
-    git "https://georgemp@bitbucket.org/rmonkey/papertraillumberjack.git"
+        git "https://georgemp@bitbucket.org/rmonkey/papertraillumberjack.git"
 
 
 ## Author
