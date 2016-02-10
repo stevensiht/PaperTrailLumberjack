@@ -47,7 +47,7 @@ To install it,
    
     Add the following line to your Podfile:
 
-    pod 'PaperTrailLumberjack'
+        pod 'PaperTrailLumberjack'
 
 
     In your project, import the PaperTrailLumberJack header
@@ -59,8 +59,8 @@ To install it,
 
     Add the following lines to your Podfile:
 
-    use_frameworks!
-    pod 'PaperTrailLumberjack/Swift'
+        use_frameworks!
+        pod 'PaperTrailLumberjack/Swift'
 
     In your project, import PaperTrailLumberJack
    
