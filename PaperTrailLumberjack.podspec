@@ -25,6 +25,7 @@ A CocoaLumberjack logger to post log messages to papertrailapp.com. Currently, o
     ss.source_files = 'Classes/*.{h,m}'
     ss.dependency 'CocoaLumberjack', '~> 2.2'
     ss.dependency 'CocoaAsyncSocket', '~> 7.4'
+    ss.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "${PODS_ROOT}/CocoaLumberjack"}
   end
 
   s.subspec 'Default' do |ss|
