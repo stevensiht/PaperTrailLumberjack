@@ -44,9 +44,9 @@ PaperTrailLumberjack can be installed by multiple methods
 
 1. PaperTrailLumberjack is available through [CocoaPods](http://cocoapods.org) 
 
-To install it,
+    To install it,
 
-+ **Objective-C** Projects
+    + **Objective-C** Projects
    
     Add the following line to your Podfile:
 
@@ -58,7 +58,7 @@ To install it,
         import <PaperTrailLumberjack/RMPaperTrailLumberjack.h>
 
 
-+ **Swift** projects, 
+    + **Swift** projects, 
 
     Add the following lines to your Podfile:
 
