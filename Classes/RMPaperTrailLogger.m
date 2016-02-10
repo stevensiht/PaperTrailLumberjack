@@ -9,8 +9,6 @@
 #import "RMPaperTrailLogger.h"
 #import "RMSyslogFormatter+Private.h"
 
-#import <CocoaAsyncSocket/CocoaAsyncSocket.h>
-
 @interface RMPaperTrailLogger () {
     GCDAsyncSocket *_tcpSocket;
     GCDAsyncUdpSocket *_udpSocket;

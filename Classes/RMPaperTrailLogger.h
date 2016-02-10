@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 
 #import <CocoaLumberjack/CocoaLumberjack.h>
+#import <CocoaAsyncSocket/CocoaAsyncSocket.h>
 
 /**
  RMPaperTrailLogger is a custom logger (for CocoaLumberjack) that directs log
@@ -20,7 +21,7 @@
  to provide a custom formatter, make sure that it formats messages that meets
  the syslog spec.
  */
-@interface RMPaperTrailLogger : DDAbstractLogger
+@interface RMPaperTrailLogger : DDAbstractLogger <GCDAsyncSocketDelegate, GCDAsyncUdpSocketDelegate>
 
 /**
  The host to which logs should be sent. Ex. logs.papertrailapp.com
