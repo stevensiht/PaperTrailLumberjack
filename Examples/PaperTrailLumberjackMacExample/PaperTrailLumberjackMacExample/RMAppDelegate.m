@@ -8,7 +8,7 @@
 
 #import "RMAppDelegate.h"
 
-#import <PaperTrailLumberjack/RMPaperTrailLumberjack.h>
+#import <PaperTrailLumberjack/PaperTrailLumberjack.h>
 
 const int ddLogLevel = DDLogLevelVerbose;
 

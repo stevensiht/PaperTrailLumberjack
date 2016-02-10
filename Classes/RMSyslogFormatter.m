@@ -65,14 +65,28 @@ static NSString* const RMAppUUIDKey = @"RMAppUUIDKey";
     
     NSString* timestamp = [dateFormatter stringFromDate:logMessage.timestamp];
 
+    NSString* function = [self formatFunctionName:logMessage.function];
     NSString* log =
-    [NSString stringWithFormat:@"<%@>%@ %@ %@: %@ %@@%@@%lu \"%@\"",
+    [NSString stringWithFormat:@"<%@>%@ %@ %@: %@ %@@%@%lu] \"%@\"",
      logLevel, timestamp, self.machineName,
-     self.programName, logMessage.threadID,
-     logMessage.fileName, logMessage.function,
-     (unsigned long)logMessage.line, msg];
+     self.programName, logMessage.threadID, logMessage.fileName,
+     function, (unsigned long)logMessage.line, msg];
+
     
     return log;
+}
+
+-(NSString*) formatFunctionName:(NSString*) functionName
+{
+    NSString* formattedName = functionName;
+    if ([formattedName hasPrefix:@"-"]) {
+        formattedName = [formattedName substringFromIndex:1];
+    }
+    if ([formattedName hasSuffix:@"]"]) {
+        formattedName = [formattedName substringToIndex:formattedName.length-1];
+    }
+    
+    return formattedName;
 }
 
 -(void) setMachineName:(NSString *)machineName
