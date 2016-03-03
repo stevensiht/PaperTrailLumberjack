@@ -1,4 +1,6 @@
 # PaperTrailLumberjack
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 PaperTrailLumberjack is a CocoaLumberjack logger that helps log statements to your log destination at [papertrailapp](http://papertrailapp.com).
 It can log using TCP and UDP - the default, being TCP (with TLS).
 
@@ -50,6 +52,7 @@ PaperTrailLumberjack can be installed by multiple methods
    
     Add the following line to your Podfile:
 
+        use_frameworks!
         pod 'PaperTrailLumberjack'
 
 
