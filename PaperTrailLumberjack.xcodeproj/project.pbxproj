@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25A014531C6B72AB00D18D34 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7D0AC1C6B4A6100B37B05 /* CocoaAsyncSocket.framework */; };
-		25A014541C6B72AB00D18D34 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7D0C31C6B4A6700B37B05 /* CocoaLumberjack.framework */; };
-		25A014551C6B72CE00D18D34 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7D0AC1C6B4A6100B37B05 /* CocoaAsyncSocket.framework */; };
-		25A014561C6B72CE00D18D34 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7D0C31C6B4A6700B37B05 /* CocoaLumberjack.framework */; };
-		25A014571C6B72CE00D18D34 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7D0C51C6B4A6700B37B05 /* CocoaLumberjackSwift.framework */; };
-		25D7D0F11C6B4B2900B37B05 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7D0AA1C6B4A6100B37B05 /* CocoaAsyncSocket.framework */; };
-		25D7D0F21C6B4B2900B37B05 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7D0C71C6B4A6700B37B05 /* CocoaLumberjack.framework */; };
-		25D7D1101C6B4BD300B37B05 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7D0AA1C6B4A6100B37B05 /* CocoaAsyncSocket.framework */; };
-		25D7D1111C6B4BD300B37B05 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7D0C71C6B4A6700B37B05 /* CocoaLumberjack.framework */; };
-		25D7D1121C6B4BD300B37B05 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7D0C91C6B4A6700B37B05 /* CocoaLumberjackSwift.framework */; };
+		2530718C1C881FAE005C3039 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2530718B1C881FAE005C3039 /* CocoaLumberjackSwift.framework */; };
+		2530718D1C881FB2005C3039 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253071801C881E02005C3039 /* CocoaAsyncSocket.framework */; };
+		2530718E1C881FB4005C3039 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253071811C881E02005C3039 /* CocoaLumberjack.framework */; };
+		253071911C881FCE005C3039 /* CocoaLumberjackSwift.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 253071901C881FCE005C3039 /* CocoaLumberjackSwift.framework.dSYM */; };
+		253071921C881FD8005C3039 /* CocoaAsyncSocket.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 253071871C881F98005C3039 /* CocoaAsyncSocket.framework.dSYM */; };
+		253071931C881FDA005C3039 /* CocoaLumberjack.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 253071881C881F98005C3039 /* CocoaLumberjack.framework.dSYM */; };
+		253071961C882011005C3039 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253071941C882011005C3039 /* CocoaAsyncSocket.framework */; };
+		253071971C882011005C3039 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253071951C882011005C3039 /* CocoaLumberjack.framework */; };
+		253071991C88208D005C3039 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253071941C882011005C3039 /* CocoaAsyncSocket.framework */; };
+		2530719A1C88208D005C3039 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253071951C882011005C3039 /* CocoaLumberjack.framework */; };
+		2530719C1C882097005C3039 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2530719B1C882097005C3039 /* CocoaLumberjackSwift.framework */; };
 		25D7D11C1C6B4C2100B37B05 /* NSString+RMPaperTrailLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7D1141C6B4C2100B37B05 /* NSString+RMPaperTrailLumberjack.h */; };
 		25D7D11D1C6B4C2100B37B05 /* NSString+RMPaperTrailLumberjack.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D7D1151C6B4C2100B37B05 /* NSString+RMPaperTrailLumberjack.m */; };
 		25D7D11E1C6B4C2100B37B05 /* RMPaperTrailLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7D1161C6B4C2100B37B05 /* RMPaperTrailLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,147 +52,42 @@
 		25D7D13B1C6B4CA000B37B05 /* RMSyslogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D7D11B1C6B4C2100B37B05 /* RMSyslogFormatter.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		25D7D0A91C6B4A6100B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0A31C6B4A6100B37B05 /* CocoaAsyncSocket.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6CD990101B77868C0011A685;
-			remoteInfo = "iOS CocoaAsyncSocket";
+/* Begin PBXCopyFilesBuildPhase section */
+		253071861C881F8C005C3039 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25D7D0AB1C6B4A6100B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0A31C6B4A6100B37B05 /* CocoaAsyncSocket.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9FC41F131B9D965000578BEB;
-			remoteInfo = "Mac CocoaAsyncSocket";
+		2530718F1C881FC0005C3039 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				253071911C881FCE005C3039 /* CocoaLumberjackSwift.framework.dSYM in CopyFiles */,
+				253071931C881FDA005C3039 /* CocoaLumberjack.framework.dSYM in CopyFiles */,
+				253071921C881FD8005C3039 /* CocoaAsyncSocket.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25D7D0AD1C6B4A6100B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0A31C6B4A6100B37B05 /* CocoaAsyncSocket.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7D8B70C41BCFA15700D8E273;
-			remoteInfo = "tvOS CocoaAsyncSocket";
-		};
-		25D7D0C21C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DCB3185114EB418E001CFBEE;
-			remoteInfo = CocoaLumberjack;
-		};
-		25D7D0C41C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18F3BF0F1A81D8B700692297;
-			remoteInfo = CocoaLumberjackSwift;
-		};
-		25D7D0C61C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19FF46021B8B4CF400B43179;
-			remoteInfo = "CocoaLumberjack-iOS";
-		};
-		25D7D0C81C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19FF460F1B8B4D1400B43179;
-			remoteInfo = "CocoaLumberjackSwift-iOS";
-		};
-		25D7D0CA1C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18F3BFD71A81E06E00692297;
-			remoteInfo = "CocoaLumberjack-iOS-Static";
-		};
-		25D7D0CC1C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19190EDE1B84D812008D059E;
-			remoteInfo = "CocoaLumberjack-watchOS";
-		};
-		25D7D0CE1C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19190EEB1B84D826008D059E;
-			remoteInfo = "CocoaLumberjackSwift-watchOS";
-		};
-		25D7D0D01C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19D90B261BBFA9DB00947169;
-			remoteInfo = "CocoaLumberjack-tvOS";
-		};
-		25D7D0D21C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19D90B351BBFAA7500947169;
-			remoteInfo = "CocoaLumberjackSwift-tvOS";
-		};
-		25D7D0D41C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DCB318CA14ED6C3B001CFBEE;
-			remoteInfo = FmwkTest;
-		};
-		25D7D0D61C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 55CCBEFF19BA679200957A39;
-			remoteInfo = SwiftTest;
-		};
-		25D7D0D81C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18F3BF5F1A81DD2E00692297;
-			remoteInfo = iOSSwiftTest;
-		};
-		25D7D0DA1C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19EC14671B84D134000EC2E7;
-			remoteInfo = watchOSSwiftTest;
-		};
-		25D7D0DC1C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19EC14731B84D134000EC2E7;
-			remoteInfo = "watchOSSwiftTest Extension";
-		};
-		25D7D0DE1C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19406BE11BDBABFF001194DC;
-			remoteInfo = tvOSSwiftTest;
-		};
-		25D7D0E01C6B4A6700B37B05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18F3BFF21A81E0C700692297;
-			remoteInfo = iOSLibStaticTest;
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		253071801C881E02005C3039 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/Mac/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		253071811C881E02005C3039 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/Mac/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		253071871C881F98005C3039 /* CocoaAsyncSocket.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CocoaAsyncSocket.framework.dSYM; path = Carthage/Build/Mac/CocoaAsyncSocket.framework.dSYM; sourceTree = "<group>"; };
+		253071881C881F98005C3039 /* CocoaLumberjack.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CocoaLumberjack.framework.dSYM; path = Carthage/Build/Mac/CocoaLumberjack.framework.dSYM; sourceTree = "<group>"; };
+		2530718B1C881FAE005C3039 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/Mac/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		253071901C881FCE005C3039 /* CocoaLumberjackSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CocoaLumberjackSwift.framework.dSYM; path = Carthage/Build/Mac/CocoaLumberjackSwift.framework.dSYM; sourceTree = "<group>"; };
+		253071941C882011005C3039 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		253071951C882011005C3039 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		2530719B1C882097005C3039 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
 		25D7D0981C6B472200B37B05 /* PaperTrailLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaperTrailLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D7D09D1C6B472200B37B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25D7D0A31C6B4A6100B37B05 /* CocoaAsyncSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaAsyncSocket.xcodeproj; path = Carthage/Checkouts/CocoaAsyncSocket/CocoaAsyncSocket.xcodeproj; sourceTree = "<group>"; };
-		25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lumberjack.xcodeproj; path = Carthage/Checkouts/CocoaLumberjack/Lumberjack.xcodeproj; sourceTree = "<group>"; };
 		25D7D0E91C6B4ADA00B37B05 /* PaperTrailLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaperTrailLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D7D0ED1C6B4ADA00B37B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25D7D0F81C6B4B6C00B37B05 /* PaperTrailLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaperTrailLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,8 +109,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A014531C6B72AB00D18D34 /* CocoaAsyncSocket.framework in Frameworks */,
-				25A014541C6B72AB00D18D34 /* CocoaLumberjack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,8 +116,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25D7D0F11C6B4B2900B37B05 /* CocoaAsyncSocket.framework in Frameworks */,
-				25D7D0F21C6B4B2900B37B05 /* CocoaLumberjack.framework in Frameworks */,
+				253071961C882011005C3039 /* CocoaAsyncSocket.framework in Frameworks */,
+				253071971C882011005C3039 /* CocoaLumberjack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,9 +125,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A014551C6B72CE00D18D34 /* CocoaAsyncSocket.framework in Frameworks */,
-				25A014561C6B72CE00D18D34 /* CocoaLumberjack.framework in Frameworks */,
-				25A014571C6B72CE00D18D34 /* CocoaLumberjackSwift.framework in Frameworks */,
+				2530718C1C881FAE005C3039 /* CocoaLumberjackSwift.framework in Frameworks */,
+				2530718D1C881FB2005C3039 /* CocoaAsyncSocket.framework in Frameworks */,
+				2530718E1C881FB4005C3039 /* CocoaLumberjack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,20 +135,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25D7D1101C6B4BD300B37B05 /* CocoaAsyncSocket.framework in Frameworks */,
-				25D7D1111C6B4BD300B37B05 /* CocoaLumberjack.framework in Frameworks */,
-				25D7D1121C6B4BD300B37B05 /* CocoaLumberjackSwift.framework in Frameworks */,
+				253071991C88208D005C3039 /* CocoaAsyncSocket.framework in Frameworks */,
+				2530719A1C88208D005C3039 /* CocoaLumberjack.framework in Frameworks */,
+				2530719C1C882097005C3039 /* CocoaLumberjackSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2530719E1C8820C8005C3039 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2530719B1C882097005C3039 /* CocoaLumberjackSwift.framework */,
+				253071941C882011005C3039 /* CocoaAsyncSocket.framework */,
+				253071951C882011005C3039 /* CocoaLumberjack.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2530719F1C8820D0005C3039 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				253071A01C8820DD005C3039 /* Mac */,
+				2530719E1C8820C8005C3039 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		253071A01C8820DD005C3039 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				253071901C881FCE005C3039 /* CocoaLumberjackSwift.framework.dSYM */,
+				253071871C881F98005C3039 /* CocoaAsyncSocket.framework.dSYM */,
+				253071881C881F98005C3039 /* CocoaLumberjack.framework.dSYM */,
+				2530718B1C881FAE005C3039 /* CocoaLumberjackSwift.framework */,
+				253071801C881E02005C3039 /* CocoaAsyncSocket.framework */,
+				253071811C881E02005C3039 /* CocoaLumberjack.framework */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
 		25D7D08E1C6B472200B37B05 = {
 			isa = PBXGroup;
 			children = (
-				25D7D0A31C6B4A6100B37B05 /* CocoaAsyncSocket.xcodeproj */,
-				25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */,
+				2530719F1C8820D0005C3039 /* Frameworks */,
 				25D7D1131C6B4C2100B37B05 /* Classes */,
 				25D7D09A1C6B472200B37B05 /* PaperTrailLumberjack */,
 				25D7D0EA1C6B4ADA00B37B05 /* PaperTrailLumberjack-iOS */,
@@ -282,39 +207,6 @@
 			);
 			name = PaperTrailLumberjack;
 			path = Frameworks/PaperTrailLumberjack;
-			sourceTree = "<group>";
-		};
-		25D7D0A41C6B4A6100B37B05 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				25D7D0AA1C6B4A6100B37B05 /* CocoaAsyncSocket.framework */,
-				25D7D0AC1C6B4A6100B37B05 /* CocoaAsyncSocket.framework */,
-				25D7D0AE1C6B4A6100B37B05 /* CocoaAsyncSocket.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		25D7D0B01C6B4A6700B37B05 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				25D7D0C31C6B4A6700B37B05 /* CocoaLumberjack.framework */,
-				25D7D0C51C6B4A6700B37B05 /* CocoaLumberjackSwift.framework */,
-				25D7D0C71C6B4A6700B37B05 /* CocoaLumberjack.framework */,
-				25D7D0C91C6B4A6700B37B05 /* CocoaLumberjackSwift.framework */,
-				25D7D0CB1C6B4A6700B37B05 /* libCocoaLumberjack-iOS-Static.a */,
-				25D7D0CD1C6B4A6700B37B05 /* CocoaLumberjack.framework */,
-				25D7D0CF1C6B4A6700B37B05 /* CocoaLumberjackSwift.framework */,
-				25D7D0D11C6B4A6700B37B05 /* CocoaLumberjack.framework */,
-				25D7D0D31C6B4A6700B37B05 /* CocoaLumberjackSwift.framework */,
-				25D7D0D51C6B4A6700B37B05 /* FmwkTest.app */,
-				25D7D0D71C6B4A6700B37B05 /* SwiftTest.app */,
-				25D7D0D91C6B4A6700B37B05 /* iOSSwiftTest.app */,
-				25D7D0DB1C6B4A6700B37B05 /* watchOSSwiftTest.app */,
-				25D7D0DD1C6B4A6700B37B05 /* watchOSSwiftTest Extension.appex */,
-				25D7D0DF1C6B4A6700B37B05 /* tvOSSwiftTest.app */,
-				25D7D0E11C6B4A6700B37B05 /* iOSLibStaticTest.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		25D7D0EA1C6B4ADA00B37B05 /* PaperTrailLumberjack-iOS */ = {
@@ -421,6 +313,7 @@
 				25D7D0941C6B472200B37B05 /* Frameworks */,
 				25D7D0951C6B472200B37B05 /* Headers */,
 				25D7D0961C6B472200B37B05 /* Resources */,
+				253071861C881F8C005C3039 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -439,6 +332,7 @@
 				25D7D0E51C6B4ADA00B37B05 /* Frameworks */,
 				25D7D0E61C6B4ADA00B37B05 /* Headers */,
 				25D7D0E71C6B4ADA00B37B05 /* Resources */,
+				253071981C88201E005C3039 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -457,6 +351,7 @@
 				25D7D0F41C6B4B6C00B37B05 /* Frameworks */,
 				25D7D0F51C6B4B6C00B37B05 /* Headers */,
 				25D7D0F61C6B4B6C00B37B05 /* Resources */,
+				2530718F1C881FC0005C3039 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -475,6 +370,7 @@
 				25D7D1041C6B4BBC00B37B05 /* Frameworks */,
 				25D7D1051C6B4BBC00B37B05 /* Headers */,
 				25D7D1061C6B4BBC00B37B05 /* Resources */,
+				2530719D1C88209D005C3039 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -518,16 +414,6 @@
 			mainGroup = 25D7D08E1C6B472200B37B05;
 			productRefGroup = 25D7D0991C6B472200B37B05 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 25D7D0A41C6B4A6100B37B05 /* Products */;
-					ProjectRef = 25D7D0A31C6B4A6100B37B05 /* CocoaAsyncSocket.xcodeproj */;
-				},
-				{
-					ProductGroup = 25D7D0B01C6B4A6700B37B05 /* Products */;
-					ProjectRef = 25D7D0AF1C6B4A6700B37B05 /* Lumberjack.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				25D7D0971C6B472200B37B05 /* PaperTrailLumberjack */,
@@ -537,142 +423,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		25D7D0AA1C6B4A6100B37B05 /* CocoaAsyncSocket.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaAsyncSocket.framework;
-			remoteRef = 25D7D0A91C6B4A6100B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0AC1C6B4A6100B37B05 /* CocoaAsyncSocket.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaAsyncSocket.framework;
-			remoteRef = 25D7D0AB1C6B4A6100B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0AE1C6B4A6100B37B05 /* CocoaAsyncSocket.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaAsyncSocket.framework;
-			remoteRef = 25D7D0AD1C6B4A6100B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0C31C6B4A6700B37B05 /* CocoaLumberjack.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjack.framework;
-			remoteRef = 25D7D0C21C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0C51C6B4A6700B37B05 /* CocoaLumberjackSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjackSwift.framework;
-			remoteRef = 25D7D0C41C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0C71C6B4A6700B37B05 /* CocoaLumberjack.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjack.framework;
-			remoteRef = 25D7D0C61C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0C91C6B4A6700B37B05 /* CocoaLumberjackSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjackSwift.framework;
-			remoteRef = 25D7D0C81C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0CB1C6B4A6700B37B05 /* libCocoaLumberjack-iOS-Static.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libCocoaLumberjack-iOS-Static.a";
-			remoteRef = 25D7D0CA1C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0CD1C6B4A6700B37B05 /* CocoaLumberjack.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjack.framework;
-			remoteRef = 25D7D0CC1C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0CF1C6B4A6700B37B05 /* CocoaLumberjackSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjackSwift.framework;
-			remoteRef = 25D7D0CE1C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0D11C6B4A6700B37B05 /* CocoaLumberjack.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjack.framework;
-			remoteRef = 25D7D0D01C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0D31C6B4A6700B37B05 /* CocoaLumberjackSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjackSwift.framework;
-			remoteRef = 25D7D0D21C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0D51C6B4A6700B37B05 /* FmwkTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = FmwkTest.app;
-			remoteRef = 25D7D0D41C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0D71C6B4A6700B37B05 /* SwiftTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = SwiftTest.app;
-			remoteRef = 25D7D0D61C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0D91C6B4A6700B37B05 /* iOSSwiftTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = iOSSwiftTest.app;
-			remoteRef = 25D7D0D81C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0DB1C6B4A6700B37B05 /* watchOSSwiftTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = watchOSSwiftTest.app;
-			remoteRef = 25D7D0DA1C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0DD1C6B4A6700B37B05 /* watchOSSwiftTest Extension.appex */ = {
-			isa = PBXReferenceProxy;
-			fileType = "wrapper.app-extension";
-			path = "watchOSSwiftTest Extension.appex";
-			remoteRef = 25D7D0DC1C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0DF1C6B4A6700B37B05 /* tvOSSwiftTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = tvOSSwiftTest.app;
-			remoteRef = 25D7D0DE1C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		25D7D0E11C6B4A6700B37B05 /* iOSLibStaticTest.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = iOSLibStaticTest.app;
-			remoteRef = 25D7D0E01C6B4A6700B37B05 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		25D7D0961C6B472200B37B05 /* Resources */ = {
@@ -704,6 +454,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		253071981C88201E005C3039 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		2530719D1C88209D005C3039 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		25D7D0931C6B472200B37B05 /* Sources */ = {
@@ -778,6 +562,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
+					"CARTHAGE_BUILD=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -820,6 +605,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "CARTHAGE_BUILD=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -842,7 +628,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Frameworks/PaperTrailLumberjack/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -862,7 +648,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Frameworks/PaperTrailLumberjack/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -882,7 +668,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${PROJECT_DIR}/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Frameworks/PaperTrailLumberjack-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -903,7 +692,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${PROJECT_DIR}/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Frameworks/PaperTrailLumberjack-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -925,7 +717,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${PROJECT_DIR}/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Frameworks/PaperTrailLumberjack-Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -946,7 +741,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${PROJECT_DIR}/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Frameworks/PaperTrailLumberjack-Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -966,7 +764,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${PROJECT_DIR}/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Frameworks/PaperTrailLumberjack-iOS-Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -988,7 +789,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${PROJECT_DIR}/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Frameworks/PaperTrailLumberjack-iOS-Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

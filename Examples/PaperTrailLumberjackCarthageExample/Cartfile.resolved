@@ -1,3 +1,3 @@
-github "robbiehanson/CocoaAsyncSocket" "6e018ddf7c456106f898efae66ea5e5c94737a96"
+github "robbiehanson/CocoaAsyncSocket" "f34134f7d14125370caf54b45dcb32d77b3ce38c"
 github "CocoaLumberjack/CocoaLumberjack" "2.2.0"
-git "https://bitbucket.org/rmonkey/papertraillumberjack.git" "0.1.3"
+git "file:///Volumes/My Stuff/BitTorrent Synced/Programs/MyPods/PaperTrailLumberjack" "b30bcb2417cb790b4c32e94d719518416a24f96a"

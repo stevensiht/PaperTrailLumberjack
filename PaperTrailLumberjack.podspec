@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PaperTrailLumberjack"
-  s.version          = "0.1.3"
+  s.version          = "0.1.4"
   s.summary          = "A CocoaLumberjack logger to post logs to papertrailapp.com"
   s.description      = <<-DESC
 A CocoaLumberjack logger to post log messages to papertrailapp.com. Currently, only posts via unsecured UDP sockets.
@@ -10,8 +10,8 @@ A CocoaLumberjack logger to post log messages to papertrailapp.com. Currently, o
   s.author           = { "George Malayil Philip" => "george.malayil@roguemonkey.in" }
   s.source = { :git => "https://bitbucket.org/rmonkey/papertraillumberjack.git" , :tag => s.version.to_s }
   s.requires_arc = true
-  s.ios.platform = :ios, '5.0'
-  s.ios.deployment_target = '5.0'
+  s.ios.platform = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
   s.osx.platform = :osx, '10.7'
   s.osx.deployment_target = '10.7'
   s.default_subspec = 'Default'
@@ -33,7 +33,6 @@ A CocoaLumberjack logger to post log messages to papertrailapp.com. Currently, o
   end
 
   s.subspec 'Swift' do |ss|
-    ss.ios.deployment_target = '8.0'
     ss.osx.deployment_target = '10.10'
     ss.dependency 'PaperTrailLumberjack/Core'
     ss.dependency 'CocoaLumberjack/Swift', '~> 2.2'

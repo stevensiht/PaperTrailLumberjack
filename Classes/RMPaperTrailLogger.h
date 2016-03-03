@@ -9,8 +9,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import <CocoaLumberjack/CocoaLumberjack.h>
-#import <CocoaAsyncSocket/CocoaAsyncSocket.h>
+@import CocoaLumberjack;
+@import CocoaAsyncSocket;
 
 /**
  RMPaperTrailLogger is a custom logger (for CocoaLumberjack) that directs log
