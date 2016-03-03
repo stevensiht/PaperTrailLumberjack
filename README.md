@@ -79,6 +79,10 @@ PaperTrailLumberjack can be installed by multiple methods
 add the following entry into your Cartfile and follow the instructions listed [here](https://github.com/Carthage/Carthage)
 
         git "https://bitbucket.org/rmonkey/papertraillumberjack.git"
+        
+    You will have to do a non-binary build with Carthage (as otherwise CocoaLumberjack-Swift is not built)
+    
+        carthage update --no-use-binaries
 
 
 ## Author
