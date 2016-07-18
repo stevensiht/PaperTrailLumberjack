@@ -60,6 +60,7 @@ static NSString* const RMAppUUIDKey = @"RMAppUUIDKey";
     dispatch_once(&onceToken, ^{
         dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"MMM dd HH:mm:ss"];
+        [dateFormatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
         [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
     });
     
