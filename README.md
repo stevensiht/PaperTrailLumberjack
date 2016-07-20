@@ -53,12 +53,15 @@ PaperTrailLumberjack can be installed by multiple methods
     Add the following line to your Podfile:
 
         use_frameworks!
-        pod 'PaperTrailLumberjack'
+        
+        target "YourTargetName" do
+           pod "PaperTrailLumberjack"
+        end
 
 
     In your project, import the PaperTrailLumberJack header
 
-        import <PaperTrailLumberjack/RMPaperTrailLumberjack.h>
+        import <PaperTrailLumberjack/PaperTrailLumberjack.h>
 
 
     + **Swift** projects, 
@@ -66,7 +69,10 @@ PaperTrailLumberjack can be installed by multiple methods
     Add the following lines to your Podfile:
 
         use_frameworks!
-        pod 'PaperTrailLumberjack/Swift'
+        
+        target "YourTargetName" do
+           pod "PaperTrailLumberjack/Swift"
+        end
 
     In your project, import PaperTrailLumberJack
    
