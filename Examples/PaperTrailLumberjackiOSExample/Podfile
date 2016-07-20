@@ -1,4 +1,7 @@
 platform :ios, '8.0'
 
 use_frameworks!
-pod "PaperTrailLumberjack", :path => "../.."
+target "PaperTrailLumberjackiOSExample" do
+   pod "PaperTrailLumberjack", :path => "../.."
+#pod "PaperTrailLumberjack"
+end
