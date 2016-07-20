@@ -15,6 +15,7 @@ A CocoaLumberjack logger to post log messages to papertrailapp.com.
   s.default_subspec = 'Default'
 
   s.public_header_files = "Classes/RMPaperTrailLumberjack.h", "Classes/RMPaperTrailLogger.h"
+  s.source_files = 'Classes/*.{h,m}'
 
   s.ios.resource_bundle = { 'PaperTrailLumberjack' => 'Assets/*'}
 
