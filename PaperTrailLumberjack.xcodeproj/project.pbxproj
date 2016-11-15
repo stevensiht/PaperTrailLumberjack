@@ -332,7 +332,6 @@
 				25D7D0E51C6B4ADA00B37B05 /* Frameworks */,
 				25D7D0E61C6B4ADA00B37B05 /* Headers */,
 				25D7D0E71C6B4ADA00B37B05 /* Resources */,
-				253071981C88201E005C3039 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -370,7 +369,6 @@
 				25D7D1041C6B4BBC00B37B05 /* Frameworks */,
 				25D7D1051C6B4BBC00B37B05 /* Headers */,
 				25D7D1061C6B4BBC00B37B05 /* Resources */,
-				2530719D1C88209D005C3039 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -454,40 +452,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		253071981C88201E005C3039 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		2530719D1C88209D005C3039 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		25D7D0931C6B472200B37B05 /* Sources */ = {
