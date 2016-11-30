@@ -1,2 +1,2 @@
 github "robbiehanson/CocoaAsyncSocket" "f34134f7d14125370caf54b45dcb32d77b3ce38c"
-github "CocoaLumberjack/CocoaLumberjack" "2.2.0"
+github "CocoaLumberjack/CocoaLumberjack" "2.4.0"
