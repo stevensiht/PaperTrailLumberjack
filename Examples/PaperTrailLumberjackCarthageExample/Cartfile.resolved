@@ -1,3 +1,3 @@
-github "robbiehanson/CocoaAsyncSocket" "f34134f7d14125370caf54b45dcb32d77b3ce38c"
+github "robbiehanson/CocoaAsyncSocket" "7.5.1"
 github "CocoaLumberjack/CocoaLumberjack" "3.0.0"
-git "https://bitbucket.org/rmonkey/papertraillumberjack.git" "06f76833ddfdbdf628e3389d4143b628bd32c221"
+git "https://bitbucket.org/rmonkey/papertraillumberjack.git" "0.1.8"

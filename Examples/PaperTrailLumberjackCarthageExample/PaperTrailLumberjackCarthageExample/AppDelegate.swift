@@ -11,12 +11,12 @@ import CocoaLumberjackSwift
 import PaperTrailLumberjack
 
 
-let ddLogLevel = DDLogLevel.Verbose;
+let ddLogLevel = DDLogLevel.verbose;
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    func log(message: String) {
+    func log(_ message: String) {
         DDLogVerbose("Verbose \(message)")
         DDLogInfo("Info \(message)")
         DDLogDebug("Debug \(message)")
@@ -24,13 +24,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         DDLogError("Error \(message)")
     }
     
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        let paperTrailLogger = RMPaperTrailLogger.sharedInstance() as RMPaperTrailLogger!
+        let paperTrailLogger = RMPaperTrailLogger.sharedInstance()!
         paperTrailLogger.host = "logs.papertrailapp.com"
-        paperTrailLogger.port = 13619
+        paperTrailLogger.port = -1
         
-        DDLog.addLogger(paperTrailLogger)
+        DDLog.add(paperTrailLogger)
+        DDLog.add(DDTTYLogger.sharedInstance())
         
         log("Default Values")
         
@@ -40,7 +41,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         log("Overriden Values")
     }
     
-    func applicationWillTerminate(aNotification: NSNotification) {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
     
