@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25D7D0E81C6B4ADA00B37B05"
+               BlueprintIdentifier = "25D7D0971C6B472200B37B05"
                BuildableName = "PaperTrailLumberjack.framework"
-               BlueprintName = "PaperTrailLumberjack-iOS"
+               BlueprintName = "PaperTrailLumberjack"
                ReferencedContainer = "container:PaperTrailLumberjack.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "25D7D0E81C6B4ADA00B37B05"
+            BlueprintIdentifier = "25D7D0971C6B472200B37B05"
             BuildableName = "PaperTrailLumberjack.framework"
-            BlueprintName = "PaperTrailLumberjack-iOS"
+            BlueprintName = "PaperTrailLumberjack"
             ReferencedContainer = "container:PaperTrailLumberjack.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "25D7D0E81C6B4ADA00B37B05"
+            BlueprintIdentifier = "25D7D0971C6B472200B37B05"
             BuildableName = "PaperTrailLumberjack.framework"
-            BlueprintName = "PaperTrailLumberjack-iOS"
+            BlueprintName = "PaperTrailLumberjack"
             ReferencedContainer = "container:PaperTrailLumberjack.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

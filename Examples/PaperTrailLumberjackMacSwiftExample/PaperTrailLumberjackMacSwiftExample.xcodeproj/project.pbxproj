@@ -176,9 +176,11 @@
 				TargetAttributes = {
 					25D7D00F1C6A1C6500B37B05 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 					};
 					25D7D0201C6A1C6500B37B05 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 						TestTargetID = 25D7D00F1C6A1C6500B37B05;
 					};
 				};
@@ -399,6 +401,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.roguemonkey.PaperTrailLumberjackMacSwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -412,6 +415,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.roguemonkey.PaperTrailLumberjackMacSwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -423,6 +427,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.roguemonkey.PaperTrailLumberjackMacSwiftExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = PaperTrailLumberjackMacSwiftExample;
 				USES_XCTRUNNER = YES;
 			};
@@ -436,6 +441,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.roguemonkey.PaperTrailLumberjackMacSwiftExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = PaperTrailLumberjackMacSwiftExample;
 				USES_XCTRUNNER = YES;
 			};

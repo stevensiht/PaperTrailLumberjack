@@ -1,2 +1,2 @@
-#git "https://bitbucket.org/rmonkey/papertraillumberjack.git"
-git "file:///Volumes/My Stuff/BitTorrent Synced/Programs/MyPods/PaperTrailLumberjack" "master"
+git "https://bitbucket.org/rmonkey/papertraillumberjack.git" "HEAD"
+#git "file:///Users/georgemp/BitTorrent Synced/Programs/MyPods/PaperTrailLumberjack" "master"

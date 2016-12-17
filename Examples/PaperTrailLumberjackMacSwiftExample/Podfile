@@ -2,6 +2,6 @@ platform :osx, '10.10'
 use_frameworks!
 
 target "PaperTrailLumberjackMacSwiftExample" do
-   pod "PaperTrailLumberjack/Swift", :path => "../.."
-   #pod "PaperTrailLumberjack/Swift"
+  # pod "PaperTrailLumberjack/Swift", :path => "../.."
+   pod "PaperTrailLumberjack/Swift"
 end

@@ -38,8 +38,8 @@ const int ddLogLevel = DDLogLevelVerbose;
     
     [self log:@"Default Values"];
     
-    paperTrailLogger.machineName = @"Custom iOS Logging Machine Name";
-    paperTrailLogger.programName = @"iOS Logging Program";
+    paperTrailLogger.machineName = @"Custom Mac Logging Machine Name";
+    paperTrailLogger.programName = @"Mac Logging Program";
     
     [self log:@"Overriden Values"];
     

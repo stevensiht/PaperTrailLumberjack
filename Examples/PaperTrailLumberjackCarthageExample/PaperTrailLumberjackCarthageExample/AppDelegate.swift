@@ -28,7 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to initialize your application
         let paperTrailLogger = RMPaperTrailLogger.sharedInstance() as RMPaperTrailLogger!
         paperTrailLogger.host = "logs.papertrailapp.com"
-        paperTrailLogger.port = -1
+        paperTrailLogger.port = 13619
         
         DDLog.addLogger(paperTrailLogger)
         
