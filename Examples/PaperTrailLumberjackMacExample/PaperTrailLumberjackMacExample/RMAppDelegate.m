@@ -29,6 +29,7 @@ const int ddLogLevel = DDLogLevelVerbose;
     RMPaperTrailLogger *paperTrailLogger = [RMPaperTrailLogger sharedInstance];
     paperTrailLogger.host = @"logs.papertrailapp.com"; //Replace with your log destination URL
     paperTrailLogger.port = -1; //Replace with your port
+//    paperTrailLogger.syslogRFCType = RMSyslogRFCType3164;
 //    paperTrailLogger.useTcp = NO;
 //    paperTrailLogger.useTLS = NO;
     

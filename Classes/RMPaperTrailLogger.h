@@ -8,6 +8,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RMSyslogFormats.h"
 
 @import CocoaLumberjack;
 @import CocoaAsyncSocket;
@@ -53,6 +54,11 @@
  only to TCP connections.
  */
 @property (nonatomic, assign) BOOL useTLS;
+
+/**
+Specifies which RFC to follow for the syslog message format. We default to RFC 3164, so, as not to make a breaking change in newer versions of PapertrailLumberjack.
+*/
+@property (nonatomic, assign) RMSyslogRFCType syslogRFCType;
 
 /**
  Returns a initialized singleton instance of this logger

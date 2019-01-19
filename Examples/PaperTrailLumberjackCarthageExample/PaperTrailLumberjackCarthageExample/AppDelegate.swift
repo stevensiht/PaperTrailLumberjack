@@ -28,10 +28,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to initialize your application
         let paperTrailLogger = RMPaperTrailLogger.sharedInstance()!
         paperTrailLogger.host = "logs.papertrailapp.com"
-        paperTrailLogger.port = -1
+        paperTrailLogger.port = 0 // Replace with your port number
+//        paperTrailLogger.syslogRFCType = .type3164
         
         DDLog.add(paperTrailLogger)
-        DDLog.add(DDTTYLogger.sharedInstance())
+        DDLog.add(DDTTYLogger.sharedInstance)
         
         log("Default Values")
         

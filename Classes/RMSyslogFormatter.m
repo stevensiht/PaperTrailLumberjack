@@ -22,6 +22,7 @@ static NSString* const RMAppUUIDKey = @"RMAppUUIDKey";
 {
     self = [super init];
     if (self) {
+        _syslogRFCType = RMSyslogRFCType5424;
         _machineName = nil;
         _programName = nil;
     }
@@ -31,9 +32,79 @@ static NSString* const RMAppUUIDKey = @"RMAppUUIDKey";
 
 - (NSString*)formatLogMessage:(DDLogMessage*)logMessage
 {
+    switch (_syslogRFCType) {
+        case RMSyslogRFCType5424:
+            return [self formatWithRFC5424:logMessage];
+            break;
+        case RMSyslogRFCType3164:
+        default:
+            return [self formatWithRFC3164:logMessage];
+            break;
+    }
+}
+
+-(NSString*) formatWithRFC3164:(DDLogMessage*) logMessage
+{
     NSString* msg = logMessage.message;
     
-    NSString* logLevel;
+    NSString* logLevel = [self rfc3164LogLevel:logMessage];
+    NSString* timestamp = [self rfc3164Timestamp:logMessage];
+    
+    NSString* function = [self formatFunctionName:logMessage.function];
+    NSString* log =
+    [NSString stringWithFormat:@"<%@>%@ %@ %@: %@ %@@%@:%lu] \"%@\"",
+     logLevel, timestamp, self.machineName,
+     self.programName, logMessage.threadID, logMessage.fileName,
+     function, (unsigned long)logMessage.line, msg];
+    
+    
+    return log;
+}
+
+-(NSString*) formatWithRFC5424:(DDLogMessage*) logMessage
+{
+    NSInteger priValue = [self rfc5424PRIValue:logMessage];
+    NSString* timestamp = [self rfc5424Timestamp:logMessage];
+    NSString* function = [self formatFunctionName:logMessage.function];
+    NSString* header = [NSString stringWithFormat:@"<%ld>1 %@ %@ %@ - -", (long) priValue, timestamp, self.machineName, self.programName];
+    
+    NSString* message = [NSString stringWithFormat:@"\357\273\277%@ %@@%@:%lu %@", logMessage.threadID, logMessage.fileName, function, (unsigned long) logMessage.line, logMessage.message];
+    
+    NSString* log = [NSString stringWithFormat:@"%@ - %@", header, message];
+    
+    return log;
+}
+
+-(NSString*) rfc3164Timestamp:(DDLogMessage*) logMessage
+{
+    static NSDateFormatter* dateFormatter;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"MMM dd HH:mm:ss"];
+        [dateFormatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
+        [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+    });
+    
+    return [dateFormatter stringFromDate:logMessage.timestamp];
+}
+
+-(NSString*) rfc5424Timestamp:(DDLogMessage*) logMessage
+{
+    static NSDateFormatter* dateFormatter;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZZ"];
+        [dateFormatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
+    });
+    
+    return [dateFormatter stringFromDate:logMessage.timestamp];
+}
+
+-(NSString*) rfc3164LogLevel:(DDLogMessage*) logMessage
+{
+    NSString* logLevel = @"";
     switch (logMessage.flag) {
         case DDLogFlagError:
             logLevel = @"11";
@@ -55,26 +126,30 @@ static NSString* const RMAppUUIDKey = @"RMAppUUIDKey";
             break;
     }
     
-    static NSDateFormatter* dateFormatter;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"MMM dd HH:mm:ss"];
-        [dateFormatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
-        [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
-    });
-    
-    NSString* timestamp = [dateFormatter stringFromDate:logMessage.timestamp];
+    return logLevel;
+}
 
-    NSString* function = [self formatFunctionName:logMessage.function];
-    NSString* log =
-    [NSString stringWithFormat:@"<%@>%@ %@ %@: %@ %@@%@%lu] \"%@\"",
-     logLevel, timestamp, self.machineName,
-     self.programName, logMessage.threadID, logMessage.fileName,
-     function, (unsigned long)logMessage.line, msg];
-
+-(NSInteger) rfc5424PRIValue:(DDLogMessage*) logMessage
+{
+    NSInteger facilityValue = 1;
+    NSInteger severityValue = 0;
+    switch (logMessage.flag) {
+        case DDLogFlagError:
+            severityValue = 3;
+            break;
+        case DDLogFlagWarning:
+            severityValue = 4;
+            break;
+        case DDLogFlagInfo:
+            severityValue = 6;
+            break;
+        case DDLogFlagDebug:
+        default:
+            severityValue = 7;
+            break;
+    }
     
-    return log;
+    return facilityValue * 8 + severityValue;
 }
 
 -(NSString*) formatFunctionName:(NSString*) functionName

@@ -18,6 +18,10 @@
 		253071991C88208D005C3039 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253071941C882011005C3039 /* CocoaAsyncSocket.framework */; };
 		2530719A1C88208D005C3039 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253071951C882011005C3039 /* CocoaLumberjack.framework */; };
 		2530719C1C882097005C3039 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2530719B1C882097005C3039 /* CocoaLumberjackSwift.framework */; };
+		253FC6BD21F3BD8300CB4DF6 /* RMSyslogFormats.h in Headers */ = {isa = PBXBuildFile; fileRef = 253FC6BC21F3BB7400CB4DF6 /* RMSyslogFormats.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25A4E2B721F3CAE40005F943 /* RMSyslogFormats.h in Headers */ = {isa = PBXBuildFile; fileRef = 253FC6BC21F3BB7400CB4DF6 /* RMSyslogFormats.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25A4E2B821F3CAF80005F943 /* RMSyslogFormats.h in Headers */ = {isa = PBXBuildFile; fileRef = 253FC6BC21F3BB7400CB4DF6 /* RMSyslogFormats.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25A4E2B921F3CB220005F943 /* RMSyslogFormats.h in Headers */ = {isa = PBXBuildFile; fileRef = 253FC6BC21F3BB7400CB4DF6 /* RMSyslogFormats.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25D7D11C1C6B4C2100B37B05 /* NSString+RMPaperTrailLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7D1141C6B4C2100B37B05 /* NSString+RMPaperTrailLumberjack.h */; };
 		25D7D11D1C6B4C2100B37B05 /* NSString+RMPaperTrailLumberjack.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D7D1151C6B4C2100B37B05 /* NSString+RMPaperTrailLumberjack.m */; };
 		25D7D11E1C6B4C2100B37B05 /* RMPaperTrailLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7D1161C6B4C2100B37B05 /* RMPaperTrailLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -86,6 +90,7 @@
 		253071941C882011005C3039 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		253071951C882011005C3039 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
 		2530719B1C882097005C3039 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		253FC6BC21F3BB7400CB4DF6 /* RMSyslogFormats.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSyslogFormats.h; sourceTree = "<group>"; };
 		25D7D0981C6B472200B37B05 /* PaperTrailLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaperTrailLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D7D09D1C6B472200B37B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25D7D0E91C6B4ADA00B37B05 /* PaperTrailLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PaperTrailLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,6 +250,7 @@
 				25D7D1171C6B4C2100B37B05 /* RMPaperTrailLogger.m */,
 				25D7D1181C6B4C2100B37B05 /* PaperTrailLumberjack.h */,
 				25D7D1191C6B4C2100B37B05 /* RMSyslogFormatter+Private.h */,
+				253FC6BC21F3BB7400CB4DF6 /* RMSyslogFormats.h */,
 				25D7D11A1C6B4C2100B37B05 /* RMSyslogFormatter.h */,
 				25D7D11B1C6B4C2100B37B05 /* RMSyslogFormatter.m */,
 			);
@@ -259,10 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				25D7D11C1C6B4C2100B37B05 /* NSString+RMPaperTrailLumberjack.h in Headers */,
+				253FC6BD21F3BD8300CB4DF6 /* RMSyslogFormats.h in Headers */,
 				25D7D11E1C6B4C2100B37B05 /* RMPaperTrailLogger.h in Headers */,
 				25D7D1201C6B4C2100B37B05 /* PaperTrailLumberjack.h in Headers */,
-				25D7D1221C6B4C2100B37B05 /* RMSyslogFormatter.h in Headers */,
 				25D7D1211C6B4C2100B37B05 /* RMSyslogFormatter+Private.h in Headers */,
+				25D7D1221C6B4C2100B37B05 /* RMSyslogFormatter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +279,10 @@
 			files = (
 				25D7D1241C6B4C7C00B37B05 /* NSString+RMPaperTrailLumberjack.h in Headers */,
 				25D7D12A1C6B4C8400B37B05 /* RMPaperTrailLogger.h in Headers */,
+				25A4E2B721F3CAE40005F943 /* RMSyslogFormats.h in Headers */,
 				25D7D1301C6B4C9200B37B05 /* PaperTrailLumberjack.h in Headers */,
-				25D7D1361C6B4C9B00B37B05 /* RMSyslogFormatter.h in Headers */,
 				25D7D1331C6B4C9500B37B05 /* RMSyslogFormatter+Private.h in Headers */,
+				25D7D1361C6B4C9B00B37B05 /* RMSyslogFormatter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +292,10 @@
 			files = (
 				25D7D1251C6B4C7D00B37B05 /* NSString+RMPaperTrailLumberjack.h in Headers */,
 				25D7D12B1C6B4C8500B37B05 /* RMPaperTrailLogger.h in Headers */,
+				25A4E2B821F3CAF80005F943 /* RMSyslogFormats.h in Headers */,
 				25D7D1311C6B4C9200B37B05 /* PaperTrailLumberjack.h in Headers */,
-				25D7D1371C6B4C9C00B37B05 /* RMSyslogFormatter.h in Headers */,
 				25D7D1341C6B4C9600B37B05 /* RMSyslogFormatter+Private.h in Headers */,
+				25D7D1371C6B4C9C00B37B05 /* RMSyslogFormatter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,9 +305,10 @@
 			files = (
 				25D7D1261C6B4C7D00B37B05 /* NSString+RMPaperTrailLumberjack.h in Headers */,
 				25D7D12C1C6B4C8500B37B05 /* RMPaperTrailLogger.h in Headers */,
+				25A4E2B921F3CB220005F943 /* RMSyslogFormats.h in Headers */,
 				25D7D1321C6B4C9300B37B05 /* PaperTrailLumberjack.h in Headers */,
-				25D7D1381C6B4C9C00B37B05 /* RMSyslogFormatter.h in Headers */,
 				25D7D1351C6B4C9600B37B05 /* RMSyslogFormatter+Private.h in Headers */,
+				25D7D1381C6B4C9C00B37B05 /* RMSyslogFormatter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,20 +395,24 @@
 		25D7D08F1C6B472200B37B05 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Rogue Monkey Technologies And Systems Private Limited";
 				TargetAttributes = {
 					25D7D0971C6B472200B37B05 = {
 						CreatedOnToolsVersion = 7.2;
+						ProvisioningStyle = Manual;
 					};
 					25D7D0E81C6B4ADA00B37B05 = {
 						CreatedOnToolsVersion = 7.2;
+						ProvisioningStyle = Manual;
 					};
 					25D7D0F71C6B4B6C00B37B05 = {
 						CreatedOnToolsVersion = 7.2;
+						ProvisioningStyle = Manual;
 					};
 					25D7D1071C6B4BBC00B37B05 = {
 						CreatedOnToolsVersion = 7.2;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -505,18 +519,27 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
+				COMPILER_INDEX_STORE_ENABLE = NO;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -537,7 +560,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -554,18 +578,27 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
+				COMPILER_INDEX_STORE_ENABLE = NO;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -580,7 +613,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -591,8 +625,11 @@
 		25D7D0A11C6B472200B37B05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -604,6 +641,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = in.roguemonkey.PaperTrailLumberjack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -611,8 +649,11 @@
 		25D7D0A21C6B472200B37B05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -624,6 +665,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = in.roguemonkey.PaperTrailLumberjack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -631,8 +673,11 @@
 		25D7D0EF1C6B4ADA00B37B05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -646,6 +691,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "in.roguemonkey.PaperTrailLumberjack-iOS";
 				PRODUCT_NAME = PaperTrailLumberjack;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -655,8 +701,11 @@
 		25D7D0F01C6B4ADA00B37B05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -670,6 +719,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "in.roguemonkey.PaperTrailLumberjack-iOS";
 				PRODUCT_NAME = PaperTrailLumberjack;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -680,8 +730,11 @@
 		25D7D0FE1C6B4B6C00B37B05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -696,6 +749,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "in.roguemonkey.PaperTrailLumberjack-Swift";
 				PRODUCT_NAME = PaperTrailLumberjack;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -704,8 +758,11 @@
 		25D7D0FF1C6B4B6C00B37B05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -720,6 +777,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "in.roguemonkey.PaperTrailLumberjack-Swift";
 				PRODUCT_NAME = PaperTrailLumberjack;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -727,8 +785,11 @@
 		25D7D10E1C6B4BBC00B37B05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -742,6 +803,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "in.roguemonkey.PaperTrailLumberjack-iOS-Swift";
 				PRODUCT_NAME = PaperTrailLumberjack;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -752,8 +814,11 @@
 		25D7D10F1C6B4BBC00B37B05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -767,6 +832,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "in.roguemonkey.PaperTrailLumberjack-iOS-Swift";
 				PRODUCT_NAME = PaperTrailLumberjack;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

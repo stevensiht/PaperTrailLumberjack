@@ -1,35 +1,36 @@
 PODS:
-  - CocoaAsyncSocket (7.5.1):
-    - CocoaAsyncSocket/GCD (= 7.5.1)
-  - CocoaAsyncSocket/GCD (7.5.1)
-  - CocoaLumberjack (3.0.0):
-    - CocoaLumberjack/Default (= 3.0.0)
-    - CocoaLumberjack/Extensions (= 3.0.0)
-  - CocoaLumberjack/Core (3.0.0)
-  - CocoaLumberjack/Default (3.0.0):
-    - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (3.0.0):
+  - CocoaAsyncSocket (7.6.3)
+  - CocoaLumberjack (3.4.2):
+    - CocoaLumberjack/Default (= 3.4.2)
+    - CocoaLumberjack/Extensions (= 3.4.2)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Extensions (3.4.2):
     - CocoaLumberjack/Default
-  - PaperTrailLumberjack (0.1.8):
-    - PaperTrailLumberjack/Default (= 0.1.8)
-  - PaperTrailLumberjack/Core (0.1.8):
-    - CocoaAsyncSocket (~> 7.5)
-    - CocoaLumberjack (~> 3.0)
-  - PaperTrailLumberjack/Default (0.1.8):
+  - PaperTrailLumberjack (0.1.9):
+    - PaperTrailLumberjack/Default (= 0.1.9)
+  - PaperTrailLumberjack/Core (0.1.9):
+    - CocoaAsyncSocket (~> 7.6)
+    - CocoaLumberjack (~> 3.4)
+  - PaperTrailLumberjack/Default (0.1.9):
     - PaperTrailLumberjack/Core
 
 DEPENDENCIES:
   - PaperTrailLumberjack (from `../..`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+
 EXTERNAL SOURCES:
   PaperTrailLumberjack:
-    :path: ../..
+    :path: "../.."
 
 SPEC CHECKSUMS:
-  CocoaAsyncSocket: e0a7e93b2ffa411592ff87e58524fbbc9b95b4fa
-  CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
-  PaperTrailLumberjack: fb0664959c23b17e9663ad01ebd242d34d2082fd
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  PaperTrailLumberjack: 449587968d5aeb3eab2d4de041ffc61ee2d49f25
 
-PODFILE CHECKSUM: 1c38762c8596c23eceffa0f52695070f533a205e
+PODFILE CHECKSUM: c53e74c32b25ba862bc15920eb6e3dd7f3b4033e
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.6.0.beta.2

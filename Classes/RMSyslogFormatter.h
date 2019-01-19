@@ -10,10 +10,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
+#import "RMSyslogFormats.h"
 
 /**
  Formats messages in the form of a syslog message.
-    The syslog format is defined as follows -
+    The syslog format (RFC3164) is defined as follows -
     \<xx\>timestamp machineName programName: message.
     xx is a log level that depicts the criticality of the error.
     timestamp - Time at which log was generated. Ex. Oct 11 22:14:15.
@@ -23,5 +24,10 @@
     message - is the message to be logged.
  */
 @interface RMSyslogFormatter : NSObject <DDLogFormatter>
+
+/**
+ Specifies which RFC to follow for the syslog message format. We default to RFC 3164, so, as not to make a breaking change in newer versions of PapertrailLumberjack.
+ */
+@property (nonatomic, assign) RMSyslogRFCType syslogRFCType;
 
 @end

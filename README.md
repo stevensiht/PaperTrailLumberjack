@@ -40,6 +40,16 @@ Whitespace (if any) in user defined machine and program names will be removed be
 
     May 08 23:20:59 MyCustomMachine MyProgram: 60b PaperTrailLumberjackiOSExampleTests@testUdpLogging@62 "Hi PaperTrailApp.com"
 
+Prior to v0.1.9, PapertrailLumberjack would format the messages with an older syslog format (RFC3164). We now, format them with RFC5424 as default. If you would like to go back to the older format, you can set it on the logger instance.
+
+    paperTrailLogger.syslogRFCType = RMSyslogRFCType3164;
+    
+## Requirements
+
+   iOS 8 or later
+   
+   MacOS 10.10 or later
+   
 ## Installation
 
 PaperTrailLumberjack can be installed by multiple methods

@@ -40,6 +40,7 @@
         _sharedInstance.logFormatter = logFormatter;
         _sharedInstance.useTcp = YES;
         _sharedInstance.useTLS = YES;
+        _sharedInstance.syslogRFCType = RMSyslogRFCType5424;
     });
     
     return _sharedInstance;
@@ -65,6 +66,15 @@
     if ([self.logFormatter isKindOfClass:[RMSyslogFormatter class]]) {
         RMSyslogFormatter* syslogFormatter = (RMSyslogFormatter*)_logFormatter;
         syslogFormatter.programName = programName;
+    }
+}
+
+-(void) setSyslogRFCType:(RMSyslogRFCType)syslogRFCType
+{
+    _syslogRFCType = syslogRFCType;
+    if ([self.logFormatter isKindOfClass:[RMSyslogFormatter class]]) {
+        RMSyslogFormatter* syslogFormatter = (RMSyslogFormatter*)_logFormatter;
+        syslogFormatter.syslogRFCType = syslogRFCType;
     }
 }
 
