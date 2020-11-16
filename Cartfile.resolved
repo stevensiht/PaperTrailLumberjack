@@ -1,2 +1,2 @@
-github "robbiehanson/CocoaAsyncSocket" "7.5.1"
-github "CocoaLumberjack/CocoaLumberjack" "3.0.0"
+github "robbiehanson/CocoaAsyncSocket" "7.6.4"
+github "CocoaLumberjack/CocoaLumberjack" "3.7.0"
